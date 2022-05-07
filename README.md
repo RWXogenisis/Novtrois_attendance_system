@@ -12,7 +12,7 @@ Currently, the attendance.py is the parent file of test.py. In these files the b
 To run these files it is enough to run attendance.py
 
 ## timetable input test.py
-The timetable input test.py stores the timetable. It will prompt the repsective teacher to enter the start time, end time of a period, course code/subject, and his/her email id for each period. 
+The timetable input test.py stores the timetable. It will prompt the repsective teacher to enter the start time, end time of a period(in 24 hour format), course code/subject, and his/her email id for each period. 
 
 ## face2.py
 The face2.py is where the real magic happens! It is a simple algorithm which just compares 2 images. It's not foolproof but it's still in it's toddler's phase as we have not implemented machine learning due to the time constraint and the lack of suitable pre-trained models.
