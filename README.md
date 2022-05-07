@@ -7,6 +7,11 @@ We have used python and various python modules to make this happen.
 The user has to note that his/her's camera should have adequate resolution for the bar code to be clear.
 In case the bar code is unclear or the camera is not working, the program will prompt the user to align the ID card correctly.
 
+## Functioning of attendance system
+At the beginning of the day, the system is started. Initially the tutor must give details of current day timetable(such as start time, end time, course code, email ID of subject teacher and tutor's). The attendance.py is initiated.
+It asseses the current time using datetime module. The start time of a period is assesed for the time pool of 10 minutes where the barcode and faces are scanned and attendance is recorded. End time is assesed to stop scanning and a mail having a list of absentees is sent to the repsective teachers and tutor's mail ID. This happens for each period.
+At 10PM(2200) the program ends
+
 ## Attendance.py
 Currently, the attendance.py is the parent file of test.py. In these files the bar code is scanned and the roll number is displayed. The program will prompt at each step.
 To run these files it is enough to run attendance.py
@@ -21,3 +26,4 @@ The face2.py is where the real magic happens! It is a simple algorithm which jus
 ## Procedure to run the program
 This is to note that currently attendance.py and test.py were tested in python 3.8.0, face2.py was tested in python 3.6.6(due to the lack of face_recognition in the later flavours of python) and "timetable input test.py" in python 3.10. But we believe that the code should be stable in Windows 10 and python 3.6.6. You should also have visual studio tools installed for smooth functioning of program.
 First, you have to run the timetable input test.py file to input the timetable with details and tutor's mail, and then attendance.py should be run after this.
+
