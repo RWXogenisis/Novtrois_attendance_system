@@ -27,3 +27,7 @@ The face2.py is where the real magic happens! It is a simple algorithm which jus
 This is to note that currently attendance.py and test.py were tested in python 3.8.0, face2.py was tested in python 3.6.6(due to the lack of face_recognition in the later flavours of python) and "timetable input test.py" in python 3.10. But we believe that the code should be stable in Windows 10 and python 3.6.6. You should also have visual studio tools installed for smooth functioning of program.
 First, you have to run the timetable input test.py file to input the timetable with details and tutor's mail, and then attendance.py should be run after this.
 
+### Disclaimer
+>In case the files in the final folder are not working, you can try running the attendance.py, timetable input test.py and face2.py in the proto folder. They are not linked but are working models. 😅
+
+You need to install face_recongition, dlib, opencv-python, tkinter, pyzbar and pickle modules. 
